@@ -1,4 +1,9 @@
-Dependencies
+Mobile Notes
+
+a webapp to store all your notes online, and access them from any mobile device
+
+
+Dependencies, use easy_install or pip to install them
 
 django
 django-registration
@@ -6,5 +11,3 @@ django-piston
 django-tagging
 django-uuidfield
 
-
-pip install django-uuidfield
