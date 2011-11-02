@@ -1,0 +1,21 @@
+{% extends "base_tpl.html" %}
+
+{% block html_title %}Your Notes - {{ curr_user.username }} {% endblock %}
+
+{% block maincontent %}
+		<div class="content-secondary">
+	
+			<div id="jqm-homeheader">
+				<h1 id="jqm-logo">Your Notes</h1>
+			</div>
+	
+	
+			<ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="f">
+            {% for note in note_list %}
+                <li><a href="{% url mobilenotes.views.view_note note.id %}">{{ note.title }}</a></li>
+            {% endfor %}
+			</ul>
+			
+		</div><!--/content-primary-->	
+
+{% endblock %}

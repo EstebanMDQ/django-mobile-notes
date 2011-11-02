@@ -19,4 +19,11 @@ urlpatterns = patterns('',
 
     # homepage
     url(r'^$', direct_to_template, {'template': 'homepage.html',}),
+    
+    # django registration
+    (r'^accounts/', include('registration.urls')),
+
+    # mobile notes
+    (r'^notes/', include('mobilenotes.urls')),
+    
 )

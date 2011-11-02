@@ -4,5 +4,7 @@ django
 django-registration
 django-piston
 django-tagging
+django-uuidfield
 
 
+pip install django-uuidfield

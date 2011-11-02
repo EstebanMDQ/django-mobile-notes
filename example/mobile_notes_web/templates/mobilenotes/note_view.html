@@ -1,0 +1,21 @@
+{% extends "base_tpl.html" %}
+
+{% block html_title %}Your Notes - {{ curr_user.username }} {% endblock %}
+
+{% block maincontent %}
+		<div class="content-secondary">
+	
+			<div id="jqm-homeheader">
+				<h1 id="jqm-logo">Your Notes</h1>
+			</div>
+	
+	
+			<ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="f">
+                <li>{{ note.title }}</li>
+                <li>{{ note.content }}</li>
+                <li>{{ note.tag }}</li>
+			</ul>
+			
+		</div><!--/content-primary-->	
+
+{% endblock %}

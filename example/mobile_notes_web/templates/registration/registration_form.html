@@ -1,0 +1,12 @@
+{% extends "base_tpl.html" %}
+
+{% block maincontent %}
+<p>
+Please fill this brief form to register.
+</p>
+
+<form action="{% url registration.views.register %}" method="post">
+{{ form.as_p }}
+<input type="submit" value="Register" />
+</form>
+{% endblock %}
