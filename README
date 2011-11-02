@@ -1,0 +1,8 @@
+Dependencies
+
+django
+django-registration
+django-piston
+django-tagging
+
+
